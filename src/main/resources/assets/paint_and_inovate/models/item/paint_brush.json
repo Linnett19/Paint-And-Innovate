@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "paint_and_inovate:item/paint_roller_hand"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "has_dye": 1
+      },
+      "model": "paint_and_inovate:item/paint_brush_dyed"
+    }
+  ]
+}
