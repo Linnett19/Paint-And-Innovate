@@ -1,7 +1,3 @@
 {
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "paint_and_inovate:block/exposed_copper_column_up",
-    "side": "paint_and_inovate:block/exposed_copper_column_side"
-  }
+  "parent": "paint_and_inovate:block/exposed_copper_column"
 }

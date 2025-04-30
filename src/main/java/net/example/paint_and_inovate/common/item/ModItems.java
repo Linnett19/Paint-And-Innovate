@@ -16,9 +16,6 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Paint_and_inovate.MODID);
 
 
-    public static final RegistryObject<Item> POINTER = ITEMS.register("pointer",
-            () -> new PointerItem());
-
     public static final RegistryObject<Item> ELIXIR_DOUBLING = ITEMS.register("elixir_doubling",
             () -> new ElixirOfDoubling());
 
@@ -26,8 +23,6 @@ public class ModItems {
             () -> new PaintBrushItem());
 
 
-    public static final RegistryObject<Item> HEAT_HAZE_AMULET = ITEMS.register("heat_haze_amulet",
-            () -> new PointerItem());
 
 
 

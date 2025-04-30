@@ -21,23 +21,18 @@ public class ModCreativeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlockRegistry.COPPER_LATTICE.get()))
                     .title(Component.translatable("creativetab.paint_and_inovate.copper"))
                     .displayItems((itemDisplayParameters, output) -> {
-
-
                         output.accept(ModBlockRegistry.COPPER_LATTICE.get());
                         output.accept(ModBlockRegistry.EXPOSED_COPPER_LATTICE.get());
                         output.accept(ModBlockRegistry.WEATHERED_COPPER_LATTICE.get());
                         output.accept(ModBlockRegistry.OXIDIZED_COPPER_LATTICE.get());
-
                         output.accept(ModBlockRegistry.COPPER_COLUMN.get());
                         output.accept(ModBlockRegistry.EXPOSED_COPPER_COLUMN.get());
                         output.accept(ModBlockRegistry.WEATHERED_COPPER_COLUMN.get());
                         output.accept(ModBlockRegistry.OXIDIZED_COPPER_COLUMN.get());
-
+                        output.accept(ModBlockRegistry.COPPER_BARREL.get());
                         output.accept(ModBlockRegistry.LAMP.get());
-
                         output.accept(ModItems.ELIXIR_DOUBLING.get());
                         output.accept(ModItems.PAINT_ROLLER.get());
-                        output.accept(ModItems.POINTER.get());
                     }).build());
 
 

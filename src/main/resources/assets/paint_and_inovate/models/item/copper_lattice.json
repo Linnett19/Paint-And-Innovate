@@ -1,6 +1,3 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "paint_and_inovate:block/copper_lattice"
-  }
+  "parent": "paint_and_inovate:block/copper_lattice"
 }

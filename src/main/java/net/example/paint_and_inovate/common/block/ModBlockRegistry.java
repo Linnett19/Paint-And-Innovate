@@ -7,10 +7,12 @@ import net.example.paint_and_inovate.common.block.custom.LatticeBlock;
 import net.example.paint_and_inovate.common.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.BarrelBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -36,24 +38,39 @@ public class ModBlockRegistry {
     public static final RegistryObject<Block> COPPER_COLUMN = registerBlock("copper_column",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()
-                    .sound(SoundType.TUFF)));
+                    .sound(SoundType.COPPER)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
 
     public static final RegistryObject<Block> EXPOSED_COPPER_COLUMN = registerBlock("exposed_copper_column",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()
-                    .sound(SoundType.TUFF)));
+                    .sound(SoundType.COPPER)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
 
     public static final RegistryObject<Block> WEATHERED_COPPER_COLUMN = registerBlock("weathered_copper_column",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()
-                    .sound(SoundType.TUFF)));
+                    .sound(SoundType.COPPER)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
 
     public static final RegistryObject<Block> OXIDIZED_COPPER_COLUMN = registerBlock("oxidized_copper_column",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()
-                    .sound(SoundType.TUFF)));
+                    .sound(SoundType.COPPER)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+            ));
 
-
+    public static final RegistryObject<Block> COPPER_BARREL = registerBlock("copper_barrel",
+            () -> new BarrelBlock(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.COPPER)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .isRedstoneConductor((state, world, pos) -> false)
+            ));
 
 
     public static final RegistryObject<Block> LAMP = registerBlock("lamp",
