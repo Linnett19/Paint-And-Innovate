@@ -2,6 +2,7 @@ package net.example.paint_and_inovate.common.block;
 
 
 import net.example.paint_and_inovate.Paint_and_inovate;
+import net.example.paint_and_inovate.common.block.custom.CopperSandBlock;
 import net.example.paint_and_inovate.common.block.custom.LampBlock;
 import net.example.paint_and_inovate.common.block.custom.LatticeBlock;
 import net.example.paint_and_inovate.common.item.ModItems;
@@ -71,6 +72,46 @@ public class ModBlockRegistry {
                     .mapColor(MapColor.TERRACOTTA_ORANGE)
                     .isRedstoneConductor((state, world, pos) -> false)
             ));
+
+
+    public static final RegistryObject<Block> COPPER_SAND = registerBlock("copper_sand",
+            () -> new CopperSandBlock(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.SAND)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .isRedstoneConductor((state, world, pos) -> false)
+            ));
+
+    public static final RegistryObject<Block> COPPER_STONE = registerBlock("copper_stone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .isRedstoneConductor((state, world, pos) -> false)
+            ));
+
+    public static final RegistryObject<Block> COPPER_SAND_STONE = registerBlock("copper_sandstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .isRedstoneConductor((state, world, pos) -> false)
+            ));
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     public static final RegistryObject<Block> LAMP = registerBlock("lamp",

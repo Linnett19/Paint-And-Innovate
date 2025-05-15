@@ -8,6 +8,8 @@ import net.example.paint_and_inovate.common.entity.client.RoboCreeperRenderer;
 import net.example.paint_and_inovate.common.item.ModCreativeTabs;
 import net.example.paint_and_inovate.common.item.ModItems;
 
+import net.example.paint_and_inovate.common.worldgen.biome.ModTerrablender;
+import net.example.paint_and_inovate.common.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
@@ -24,6 +26,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 @Mod(Paint_and_inovate.MODID)
 public class Paint_and_inovate {
@@ -33,37 +36,32 @@ public class Paint_and_inovate {
 
     public Paint_and_inovate() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        // Регистрация ивентов и компонентов
         modEventBus.addListener(this::commonSetup);
+
         ModItems.register(modEventBus);
         ModBlockRegistry.register(modEventBus);
-        HCEntities.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
 
+        HCEntities.register(modEventBus);
 
+        ModTerrablender.registerBiomes();
 
-
-        // Регистрируем все события на клиенте (которые подписаны на EventBus)
         MinecraftForge.EVENT_BUS.register(ClientModEvents.class);
-        // Регистрация событий
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        // Общая инициализация
     }
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             ItemProperties.register(
-                    ModItems.PAINT_ROLLER.get(), // ваш предмет кисти
-                    ResourceLocation.fromNamespaceAndPath("paint_and_inovate","has_dye"), // название свойства
+                    ModItems.PAINT_ROLLER.get(),
+                    ResourceLocation.fromNamespaceAndPath("paint_and_inovate","has_dye"),
                     (itemStack, level, livingEntity, seed) -> {
-                        if (livingEntity == null) return 0.0f; // если не в руках игрока
+                        if (livingEntity == null) return 0.0f;
 
-                        // Проверяем, есть ли краситель в другой руке
                         ItemStack mainHand = livingEntity.getMainHandItem();
                         ItemStack offHand = livingEntity.getOffhandItem();
 
@@ -71,7 +69,7 @@ public class Paint_and_inovate {
                                 (itemStack == mainHand && offHand.getItem() instanceof DyeItem) ||
                                         (itemStack == offHand && mainHand.getItem() instanceof DyeItem);
 
-                        return hasDyeInOtherHand ? 1.0f : 0.0f; // 1 = краситель есть, 0 = нет
+                        return hasDyeInOtherHand ? 1.0f : 0.0f;
                     }
             );
         });
@@ -79,7 +77,7 @@ public class Paint_and_inovate {
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        // Сервер запускается
+
     }
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

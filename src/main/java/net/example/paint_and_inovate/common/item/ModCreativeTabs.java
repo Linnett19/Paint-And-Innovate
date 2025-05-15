@@ -33,6 +33,10 @@ public class ModCreativeTabs {
                         output.accept(ModBlockRegistry.LAMP.get());
                         output.accept(ModItems.ELIXIR_DOUBLING.get());
                         output.accept(ModItems.PAINT_ROLLER.get());
+
+                        output.accept(ModBlockRegistry.COPPER_SAND.get());
+                        output.accept(ModBlockRegistry.COPPER_SAND_STONE.get());
+                        output.accept(ModBlockRegistry.COPPER_STONE.get());
                     }).build());
 
 

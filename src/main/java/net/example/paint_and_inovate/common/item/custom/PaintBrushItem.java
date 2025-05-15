@@ -265,8 +265,8 @@ public class PaintBrushItem extends Item {
         double y = pos.getY() + 0.5;
         double z = pos.getZ() + 0.5;
         Vector3f color = getColorForDye(dyeColor);
-        double radius = 0.8;
-        int numParticles = 5;
+        double radius = 0.9;
+        int numParticles = 8;
         for (int i = 0; i < numParticles; i++) {
             double offsetX = (Math.random() * 2 - 1);
             double offsetZ = (Math.random() * 2 - 1);
@@ -304,5 +304,3 @@ public class PaintBrushItem extends Item {
         }
     }
 }
-
-
