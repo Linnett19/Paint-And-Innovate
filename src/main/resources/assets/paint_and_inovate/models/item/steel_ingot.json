@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "paint_and_inovate:item/steel_ingot"
+	}
+}

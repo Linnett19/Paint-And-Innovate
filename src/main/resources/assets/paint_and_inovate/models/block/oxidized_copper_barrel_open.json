@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "down": "paint_and_inovate:block/copper_blocks/oxidized_copper_barrel_bottom",
+    "up": "paint_and_inovate:block/copper_blocks/oxidized_copper_barrel_top_open",
+    "north": "paint_and_inovate:block/copper_blocks/oxidized_copper_barrel_side",
+    "south": "paint_and_inovate:block/copper_blocks/oxidized_copper_barrel_side",
+    "west": "paint_and_inovate:block/copper_blocks/oxidized_copper_barrel_side",
+    "east": "paint_and_inovate:block/copper_blocks/oxidized_copper_barrel_side",
+    "particle": "paint_and_inovate:block/copper_blocks/oxidized_copper_barrel_side"
+  }
+}

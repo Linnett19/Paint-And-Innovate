@@ -16,50 +16,38 @@
       "sound": "minecraft:music.overworld.desert"
     },
     "sky_color": 11560756,
-    "water_color": 14745518,
-    "water_fog_color": 12638463
+    "water_color": 7551008,
+    "water_fog_color": 7551008,
+
+    "particle": {
+      "options": {
+        "type": "minecraft:dust",
+        "r": 0.9,
+        "g": 0.4,
+        "b": 0.1,
+        "scale": 1.2,
+        "velocity": {
+          "x": 0.05,
+          "y": 0.01,
+          "z": 0.05
+        }
+      },
+      "probability": 0.05
+    },
+
+    "ambient_sound": "minecraft:ambient.desert.loop"
   },
   "features": [
     [],
     [],
     [],
-    [
-      "minecraft:monster_room",
-      "minecraft:monster_room_deep"
-    ],
+    [],
+    [],
+    [],
+    [],
     [],
     [],
     [
-      "minecraft:ore_coal_upper",
-      "minecraft:ore_coal_lower",
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_iron_middle",
-      "minecraft:ore_iron_small",
-      "minecraft:ore_gold",
-      "minecraft:ore_gold_lower",
-      "minecraft:ore_redstone",
-      "minecraft:ore_redstone_lower",
-      "minecraft:ore_diamond",
-      "minecraft:ore_diamond_large",
-      "minecraft:ore_diamond_buried",
-      "minecraft:ore_lapis",
-      "minecraft:ore_lapis_buried",
-      "minecraft:ore_copper",
-      "minecraft:underwater_magma",
-      "minecraft:ore_dirt",
-      "minecraft:ore_gravel",
-      "minecraft:ore_granite_upper",
-      "minecraft:ore_granite_lower",
-      "minecraft:ore_diorite_upper",
-      "minecraft:ore_diorite_lower",
-      "minecraft:ore_andesite_upper",
-      "minecraft:ore_andesite_lower",
-      "minecraft:ore_tuff"
-    ],
-    [],
-    [],
-    [
-      "minecraft:glow_lichen",
       "minecraft:patch_dead_bush_2"
     ]
   ],

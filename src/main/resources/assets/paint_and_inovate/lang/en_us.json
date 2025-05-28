@@ -1,7 +1,5 @@
 {
-  "creativetab.paint_and_inovate.copper": "§kCopper Quarry",
-
-  "block.paint_and_inovate.copper_barrel": "Copper Barrel",
+  "creativetab.paint_and_inovate.copper": "Copper Quarry",
 
   "block.paint_and_inovate.copper_lattice": "Copper Lattice",
   "block.paint_and_inovate.exposed_copper_lattice": "Exposed Copper Lattice",
@@ -18,15 +16,37 @@
   "block.paint_and_inovate.weathered_copper_column": "Weathered Copper Column",
   "block.paint_and_inovate.oxidized_copper_column": "Oxidized Copper Column",
 
+  "block.paint_and_inovate.copper_stone": "Copper Stone",
+  "block.paint_and_inovate.copper_sand": "Copper Sand",
+  "block.paint_and_inovate.copper_sandstone": "Copper Sandstone",
+  "block.paint_and_inovate.chiseled_copper_sandstone": "Chiseled Copper Sandstone",
+  "block.paint_and_inovate.polished_copper_sandstone": "Polished Copper Sandstone",
+
+  "item.paint_and_inovate.copper_wire": "Copper Wire",
+  "item.paint_and_inovate.steel_wire": "Steel Wire",
+  "item.paint_and_inovate.copper_key": "Copper Key",
+
+  "item.paint_and_inovate.copper_nugget": "Copper Nugget",
+  "item.paint_and_inovate.steel_nugget": "Steel Nugget",
+  "item.paint_and_inovate.steel_ingot": "Steel Ingot",
+
+  "block.paint_and_inovate.copper_barrel": "Copper Barrel",
+  "block.paint_and_inovate.exposed_copper_barrel": "Exposed Copper Barrel",
+  "block.paint_and_inovate.weathered_copper_barrel": "Weathered Copper Barrel",
+  "block.paint_and_inovate.oxidized_copper_barrel": "Oxidized Copper Barrel",
+
   "block.paint_and_inovate.lamp": "Lamp",
 
   "item.paint_and_inovate.paint_roller": "Paint Roller",
+
+  "item.paint_and_inovate.disc_innovate": "Music Disc",
+  "item.paint_and_inovate.disc_happiness": "Music Disc",
+
+
   "item.paint_and_inovate.elixir_doubling": "Elixir o' Doubling",
   "item.paint_and_inovate.elixir_doubling.tooltip": "Extends all your current potion effects by 42 seconds",
   "item.paint_and_inovate.effect": "Effect:",
 
-
   "message.paint_and_inovate.cannot_paint": "\u274C Cannot paint it"
-
 }
 

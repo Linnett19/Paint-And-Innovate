@@ -28,11 +28,17 @@ public class ModBlockRegistry {
 
     public static final RegistryObject<Block> COPPER_LATTICE = registerBlock("copper_lattice",
             () -> new LatticeBlock());
+
     public static final RegistryObject<Block> EXPOSED_COPPER_LATTICE = registerBlock("exposed_copper_lattice",
             () -> new LatticeBlock());
+
     public static final RegistryObject<Block> WEATHERED_COPPER_LATTICE = registerBlock("weathered_copper_lattice",
             () -> new LatticeBlock());
+
     public static final RegistryObject<Block> OXIDIZED_COPPER_LATTICE = registerBlock("oxidized_copper_lattice",
+            () -> new LatticeBlock());
+
+    public static final RegistryObject<Block> STEEL_LATTICE = registerBlock("steel_lattice",
             () -> new LatticeBlock());
 
 
@@ -73,6 +79,30 @@ public class ModBlockRegistry {
                     .isRedstoneConductor((state, world, pos) -> false)
             ));
 
+    public static final RegistryObject<Block> EXPOSED_COPPER_BARREL = registerBlock("exposed_copper_barrel",
+            () -> new BarrelBlock(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.COPPER)
+                    .mapColor(MapColor.TERRACOTTA_BROWN)
+                    .isRedstoneConductor((state, world, pos) -> false)
+            ));
+    public static final RegistryObject<Block> WEATHERED_COPPER_BARREL = registerBlock("weathered_copper_barrel",
+            () -> new BarrelBlock(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.COPPER)
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .isRedstoneConductor((state, world, pos) -> false)
+            ));
+    public static final RegistryObject<Block> OXIDIZED_COPPER_BARREL = registerBlock("oxidized_copper_barrel",
+            () -> new BarrelBlock(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.COPPER)
+                    .mapColor(MapColor.COLOR_BLUE)
+                    .isRedstoneConductor((state, world, pos) -> false)
+            ));
 
     public static final RegistryObject<Block> COPPER_SAND = registerBlock("copper_sand",
             () -> new CopperSandBlock(BlockBehaviour.Properties.of()
@@ -101,13 +131,37 @@ public class ModBlockRegistry {
                     .isRedstoneConductor((state, world, pos) -> false)
             ));
 
+    public static final RegistryObject<Block> POLISHED_COPPER_SAND_STONE = registerBlock("polished_copper_sandstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .isRedstoneConductor((state, world, pos) -> false)
+            ));
 
+    public static final RegistryObject<Block> CHISELED_COPPER_SAND_STONE = registerBlock("chiseled_copper_sandstone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .isRedstoneConductor((state, world, pos) -> false)
+            ));
 
+    public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHERITE_BLOCK)
+                    .mapColor(MapColor.COLOR_GRAY)
+            ));
 
-
-
-
-
+    public static final RegistryObject<Block> CHISELED_STEEL_BLOCK = registerBlock("chiseled_steel_block",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()
+                    .sound(SoundType.NETHERITE_BLOCK)
+                    .mapColor(MapColor.COLOR_GRAY)
+            ));
 
 
 

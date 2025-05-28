@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "paint_and_inovate:block/copper_blocks/copper_sandstone_up",
+    "side": "paint_and_inovate:block/copper_blocks/chiseled_copper_sandstone"
+  }
+}

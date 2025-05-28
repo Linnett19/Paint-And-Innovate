@@ -1,6 +1,7 @@
 package net.example.paint_and_inovate.common.worldgen.biome;
 
 import net.example.paint_and_inovate.Paint_and_inovate;
+import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -19,11 +20,14 @@ public class ModBiomes {
     }
 
     public static void globalOverworldGeneration(BiomeGenerationSettings.Builder builder) {
-        BiomeDefaultFeatures.addDefaultOres(builder);
-        BiomeDefaultFeatures.addDefaultMonsterRoom(builder);
-        BiomeDefaultFeatures.addDefaultUndergroundVariety(builder);
         BiomeDefaultFeatures.addDesertVegetation(builder);
     }
+
+
+
+
+
+
 
     public static Biome copperwastlandBiome(BootstapContext<Biome> context) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();

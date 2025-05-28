@@ -6,7 +6,7 @@
       "x": 180
     },
     "facing=down,open=true": {
-      "model": "paint_and_inovate:block/copper_barrel",
+      "model": "paint_and_inovate:block/copper_barrel_open",
       "x": 180
     },
     "facing=east,open=false": {
@@ -15,7 +15,7 @@
       "y": 90
     },
     "facing=east,open=true": {
-      "model": "paint_and_inovate:block/copper_barrel",
+      "model": "paint_and_inovate:block/copper_barrel_open",
       "x": 90,
       "y": 90
     },
@@ -24,7 +24,7 @@
       "x": 90
     },
     "facing=north,open=true": {
-      "model": "paint_and_inovate:block/copper_barrel",
+      "model": "paint_and_inovate:block/copper_barrel_open",
       "x": 90
     },
     "facing=south,open=false": {
@@ -33,7 +33,7 @@
       "y": 180
     },
     "facing=south,open=true": {
-      "model": "paint_and_inovate:block/copper_barrel",
+      "model": "paint_and_inovate:block/copper_barrel_open",
       "x": 90,
       "y": 180
     },
@@ -41,7 +41,7 @@
       "model": "paint_and_inovate:block/copper_barrel"
     },
     "facing=up,open=true": {
-      "model": "paint_and_inovate:block/copper_barrel"
+      "model": "paint_and_inovate:block/copper_barrel_open"
     },
     "facing=west,open=false": {
       "model": "paint_and_inovate:block/copper_barrel",
@@ -49,7 +49,7 @@
       "y": 270
     },
     "facing=west,open=true": {
-      "model": "paint_and_inovate:block/copper_barrel",
+      "model": "paint_and_inovate:block/copper_barrel_open",
       "x": 90,
       "y": 270
     }

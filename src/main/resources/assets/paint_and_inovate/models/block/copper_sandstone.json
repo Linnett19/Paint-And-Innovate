@@ -1,7 +1,12 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "paint_and_inovate:block/copper_blocks/copper_sandstone_up",
-    "side": "paint_and_inovate:block/copper_blocks/copper_sandstone"
+    "down": "paint_and_inovate:block/copper_blocks/copper_stone",
+    "up": "paint_and_inovate:block/copper_blocks/copper_sandstone_up",
+    "north": "paint_and_inovate:block/copper_blocks/copper_sandstone",
+    "south": "paint_and_inovate:block/copper_blocks/copper_sandstone",
+    "west": "paint_and_inovate:block/copper_blocks/copper_sandstone",
+    "east": "paint_and_inovate:block/copper_blocks/copper_sandstone",
+    "particle": "paint_and_inovate:block/copper_blocks/copper_sandstone"
   }
 }
