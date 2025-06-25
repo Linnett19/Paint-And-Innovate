@@ -58,10 +58,10 @@ public class ModItems {
 
 
 
-    public static final RegistryObject<Item> DISC_CAT = ITEMS.register("disc_cat",
+    public static final RegistryObject<Item> DISC_INNOVATE = ITEMS.register("disc_innovate",
             () -> new RecordItem(6, SoundEvents.MUSIC_DISC_CAT, new Item.Properties().stacksTo(1), 178));
 
-    public static final RegistryObject<Item> DISC_CHIRP = ITEMS.register("disc_chirp",
+    public static final RegistryObject<Item> DISC_HAPPINESS = ITEMS.register("disc_happiness",
             () -> new RecordItem(6, SoundEvents.MUSIC_DISC_CHIRP, new Item.Properties().stacksTo(1), 185));
 
 

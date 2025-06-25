@@ -50,6 +50,12 @@ minecraft {
 
         client {
             property 'forge.enabledGameTestNamespaces', mod_id
+
+            args '--username', 'Linnett', '--uuid', '9b931b8d-873f-4953-bb9b-c094cf7ada9d'
+            jvmArgs = [
+                    "--add-exports=java.base/sun.security.util=ALL-UNNAMED",
+                    "--add-opens=java.base/java.util.jar=ALL-UNNAMED"
+            ]
         }
 
         server {

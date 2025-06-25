@@ -62,7 +62,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.COPPER_WIRE.get());
 
                         output.accept(ModItems.COPPER_KEY.get());
-                        output.accept(ModItems.DISC_CHIRP.get());
+                        output.accept(ModItems.DISC_INNOVATE.get());
                     }).build());
 
 
@@ -72,11 +72,11 @@ public class ModCreativeTabs {
 
     public static final Supplier<CreativeModeTab> RAINBOW = CREATIVE_MODE_TAB.register("rainbow",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.RED_DYE))
-                    .title(Component.translatable("creativetab.paint_and_inovate.copper"))
+                    .title(Component.translatable("creativetab.paint_and_inovate.rainbow"))
                     .displayItems((itemDisplayParameters, output) -> {
 
 
-                        output.accept(ModItems.DISC_CAT.get());
+                        output.accept(ModItems.DISC_HAPPINESS.get());
                     }).build());
 
 

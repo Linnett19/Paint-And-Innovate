@@ -1,6 +1,7 @@
 package net.example.paint_and_inovate.common.worldgen;
 
 import net.example.paint_and_inovate.Paint_and_inovate;
+import net.example.paint_and_inovate.common.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
@@ -18,6 +19,7 @@ public class ModPlacedFeatures {
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+        ModSurfaceRules.makeRules();
 
 
     }

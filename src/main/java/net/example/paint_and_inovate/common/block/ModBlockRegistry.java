@@ -164,10 +164,6 @@ public class ModBlockRegistry {
             ));
 
 
-
-
-
-
     public static final RegistryObject<Block> LAMP = registerBlock("lamp",
             () -> new LampBlock());
 

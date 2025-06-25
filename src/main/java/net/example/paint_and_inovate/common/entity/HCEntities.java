@@ -26,6 +26,25 @@ public class HCEntities {
                             .build(ResourceLocation.fromNamespaceAndPath(Paint_and_inovate.MODID, "robo_creeper").toString()) // ВАЖНО!
             );
 
+    public static final RegistryObject<EntityType<RoboCreeperEntity>> COPPER_COMPRESSOR =
+            ENTITY_TYPES.register("copper_compressor",
+                    () -> EntityType.Builder.<RoboCreeperEntity>of(RoboCreeperEntity::new, MobCategory.MONSTER)
+                            .sized(0.6F, 1.8F)
+                            .build(ResourceLocation.fromNamespaceAndPath(Paint_and_inovate.MODID, "copper_compressor").toString()) // ВАЖНО!
+            );
+
+
+
+
+
+
+
+
+
+
+
+
+
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

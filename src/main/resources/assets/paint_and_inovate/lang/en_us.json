@@ -1,5 +1,6 @@
 {
   "creativetab.paint_and_inovate.copper": "Copper Quarry",
+  "creativetab.paint_and_inovate.rainbow": "Rainbow Island",
 
   "block.paint_and_inovate.copper_lattice": "Copper Lattice",
   "block.paint_and_inovate.exposed_copper_lattice": "Exposed Copper Lattice",
@@ -39,13 +40,28 @@
 
   "item.paint_and_inovate.paint_roller": "Paint Roller",
 
-  "item.paint_and_inovate.disc_innovate": "Music Disc",
-  "item.paint_and_inovate.disc_happiness": "Music Disc",
+  "item.paint_and_inovate.disc_innovate": "§bMusic Disc",
+  "item.paint_and_inovate.disc_happiness": "§bMusic Disc",
 
+  "item.paint_and_inovate.disc_innovate.desc": "? - innovate",
+  "item.paint_and_inovate.disc_happiness.desc": "? - eternal happiness",
 
   "item.paint_and_inovate.elixir_doubling": "Elixir o' Doubling",
   "item.paint_and_inovate.elixir_doubling.tooltip": "Extends all your current potion effects by 42 seconds",
   "item.paint_and_inovate.effect": "Effect:",
+
+
+
+  "entity.paint_and_inovate.robo_creeper": "Mechanical Creeper",
+  "entity.paint_and_inovate.copper_compressor": "Copper Compressor",
+
+
+
+
+
+
+
+
 
   "message.paint_and_inovate.cannot_paint": "\u274C Cannot paint it"
 }
